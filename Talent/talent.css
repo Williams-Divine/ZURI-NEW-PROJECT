@@ -1,0 +1,389 @@
+/* generals */
+:root{
+    --greyColor:#585858;
+    --redColor:#E7332B;
+}
+*{
+    padding:0;
+    margin: 0;
+    list-style: none;
+    font-size: 1.14rem;
+    color: var(--greyColor);
+    line-height: 1.2em;
+    box-sizing: border-box;
+}
+.redbtn,.greybtn{
+    color: white;
+    font-size: .9rem;
+    font-weight: 700;
+    padding: .7em 2.5em;
+    border: none;
+    border-bottom-right-radius: 10px;
+    background-color: var(--redColor);
+    /* box-shadow: 1px ,1px, .5px,1px black; */
+}
+section a{
+    margin-right: 1rem;
+}
+.greybtn{
+    background-color: var(--greyColor);
+}
+.red-color{
+    color: var(--redColor);
+}
+.greyColor{
+    color: var(--greyColor);
+}
+h1,h2,h3,.black{
+    color: black;
+}
+ h2, h3, h2 span, h3 span{
+    font-size: 2.5rem;
+
+}
+/* header */
+header{
+    padding: 1rem 5.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 200;
+    background-color: white;
+    width: 100%;
+}
+header #nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+header #nav ul{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+}
+header #nav ul li{
+    padding-right: 1.5em;
+}
+header #nav ul a{
+    text-decoration: none;
+    padding: 1em .5em;
+    color: black;
+    font-size: 1.1rem;
+
+}
+header #nav ul a:active,header #nav ul a:active{
+    border-bottom:3px  solid var(--redColor);
+}
+header #nav ul a:hover{
+    background-color: rgb(181, 218, 253);
+}
+/* main */
+/* main section(home) */
+main #home{
+    padding:18% 6.5%;
+    display: flex;
+    flex-direction: row;
+}
+main #home section{
+    padding-top:  6rem ;
+}
+main #home section h1,#home span{
+    font-size: 2.4rem;
+    margin-bottom: .8em;
+}
+main #home img{
+    width: 35%;
+    height: fit-content;
+}
+main #home p{
+    width: 60%;
+    text-align: justify;
+}
+/* main section(impact) */
+main #impact{
+    padding: 15% 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 213, 220)  no-repeat cover;
+    background-image: url(background-sec2.PNG);
+}
+main #impact section h2,#impact span{
+    line-height: 1em;
+    margin-bottom: .3em;
+}
+main #impact p{
+    margin-bottom: .5em;
+}
+main #impact section .bold{
+    font-weight: 900;
+}
+main #impact section #img img{
+    background-color: white;
+    width:15%;
+    height: 3rem;
+    padding: .4em;
+    margin-right: .5rem;
+    border-radius: 5px;
+}
+main #impact #people{
+    width:35% ;
+    margin-left: 20%;
+}
+/* main section3 */
+main #section3{
+    padding:6% 8% ;
+}
+main #section3 h2,#section3 span{
+    font-size: 2.5rem;
+    width: 49%;
+}
+main #section3 div{
+    width: 85%;
+    margin: 4% 0;
+    display: flex;  
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+main #section3 div label{
+    line-height: 1.8rem;
+    border-radius: 7px;
+    padding: 1% 1.5%;
+    box-shadow: 9px 0px 40px rgba(0,0,0,.2); 
+}
+main #section3 div label:hover{
+    transform: translateY(-30%);
+    transition: transform 0.3s linear;
+}
+
+main #section3 #equal-width label{
+    /* width: 24%; */
+    /* padding: 1% 3%; */
+
+}
+/* The Why us section */
+#whyUs{    
+    background-color: rgb(255, 248, 229);
+    padding: 5rem 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#whyUs #why{
+    display:flex ;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+#whyUs #why div {
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    background-color: white; 
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+    padding: 2rem;
+    width:31% ;
+    height: 290px;
+    margin-left: 15px; margin-bottom: 2rem;
+}
+#whyUs #why div:hover{
+    background-color: black;
+    color: blue;
+}
+#whyUs #why div img{
+    width: 4.5rem;
+    margin-bottom: 35px;
+}
+
+/* The footer */
+footer{
+    background-color: black;
+    padding: 5rem 5% 1rem;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+}
+footer div:first-child {
+    margin-bottom: 2rem;
+}
+
+footer #socials img{
+    width: 2rem;
+    height: 2rem;
+    margin-right: .7rem;
+}
+footer div:last-child a,footer div:last-child p {
+    color: white;
+    font-size:1rem;
+
+}
+
+/* @media(max-width:1380px){} */
+
+@media(max-width:1200px){
+   /* header */
+    header{
+        padding: 1rem 3.5rem;
+    }
+    /* main section(home) */
+    main #home{
+        padding: 10% 20%;
+        display: flex;
+        flex-direction: column;
+    }
+    main #home img{
+        margin-top: 3rem;
+        width: 100%;
+    }
+    main #home p,#home h1{
+        text-align: center;
+        width: 100%;
+    }
+    main #home section section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding:  2rem 1.5%  0;
+
+    }
+    /* main section(impact) */
+    main #impact{
+        padding: 15% 9%;
+    }
+    main #impact section h2,#impact span{
+        font-size: 2rem;
+
+    }
+    main #impact #people{
+        width: 45%;
+        margin-left: 5%;
+    }
+    /* main section3 */
+    main #section3{
+        padding:6% 6% ;
+    }
+    main #section3 h2,#section3 span{
+        font-size: 1.9rem;
+        width: 40%;
+    }
+    main #section3 div{
+        width: 100%;
+    }
+    main #whyUs h2,#whyUs .red-color{
+        font-size: 1.7rem;
+    }
+    #whyUs #why div {
+        width: 45%;
+    }
+    #whyUs #why div:last-child {
+    width: 95%;
+    }
+    footer div:first-child > a img{
+        margin-left: 4.5rem;
+    }       
+}
+
+
+
+@media(max-width:900px){
+    /* generals */
+    .redbtn,.greybtn{
+        padding: .7em 2.5rem;
+    }
+    /* header */
+    header{
+        padding: .7rem 3% 1.5rem;
+    }
+    header nav{
+        display: none;
+    }
+    /* main section(home) */
+    main #home{
+        padding: 10% 12%;
+    }
+    main #home p, #home img{
+        padding:0 10%;
+    }
+    /* main section(impact) */
+    main #impact {
+        padding: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main #impact section{
+        text-align: center;
+        margin-bottom: 15%;
+    }
+    main #impact section #img img{
+        width:15%;
+    }
+    main #impact #people{
+        width: 75%;
+    }
+    main #section3{
+        padding:6% 8% ;
+    }
+    main #section3 section div{
+        display: grid;  
+        grid-template-columns:repeat(auto-fit, minmax(50px,.5fr) );
+        gap: .5rem;
+   }
+
+}
+
+@media(max-width:600px){
+    /* generals */
+    p{
+        font-size: 1.1rem;
+    }
+    .redbtn,.button .redbtn,.button .greybtn{
+        padding: .5rem 1.5rem ;
+        margin-right: 1rem;
+    }
+    /* header */
+    header{
+        padding: 1.5% 5%;
+    }    
+    /* main section(home) */
+    main #home{
+        padding:1em 7%;
+    }
+    main #home p, #home img{
+        padding:0 5%;
+    }
+    /* main section(impact) */
+    main #impact {
+        padding: 8%;
+    }
+    main #impact section{
+        text-align: left;
+        padding: .2%;
+    }
+    main #impact section h2, #impact span{
+        font-size: 1.7rem;
+
+    }
+    main #impact section #img img{
+        width: 16%;
+        height: 4rem;
+    }
+    main #impact #people{
+        width: 100%;
+    }
+    #whyUs #why  {
+        flex-direction: column;
+    }
+    #whyUs #why div {
+        width: 100%;
+    }
+
+
+}
