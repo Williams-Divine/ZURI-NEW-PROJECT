@@ -16,7 +16,7 @@
 }
 .red-btn,
 .transparent-btn{
-  padding: .7em 1em;
+  padding: 1em 1.8em;
   border-radius: 5px;
   border: none;
   outline: none;
@@ -61,6 +61,13 @@ header,
 {
   padding: 0 10vw;
 }
+.decorator{
+  position: absolute;
+  top: -15px;
+  left: 0;
+  height: 2.5em;
+  width: 100%;
+}
 h1,
 h1 span{
   font-size: 2.7rem;
@@ -101,10 +108,8 @@ header{
       li{
         margin-right: 2em;
 
-
         a{
           font-size: .75rem;
-
         }
       }
     }
@@ -112,6 +117,8 @@ header{
 
       button{
         font-size: .75rem;
+        padding: .7em 1em;
+
       }
       .transparent-btn{
         margin-right: 1em;
@@ -221,13 +228,8 @@ main{
     padding-top: 3.5em;
     padding-bottom: 3.5em;
     background-color: var(--primaryColor);
-   
     position: relative;
-    >img{
-      position: absolute;
-      top: -15px;
-      height: 2.5em;
-    }
+    
     >div{
       display: flex;
       flex-direction: column;
@@ -467,7 +469,120 @@ main{
     }
   }
 }
+//FOOTER
 footer{
   background-color: var(--primaryColor);
-  color: var(--secondaryColor2);
+  position: relative;
+  padding: 4em 10vw;
+
+  p,h3,a,h2{
+    color: var(--secondaryColor2);
+  }
+  button,a{
+    font-size: .9em;
+
+  }
+  #get-started{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3em;
+    
+    h2{
+      text-align: center;
+      padding: .7em;
+      width: 550px;
+    }
+  }
+  #zuriTeam{
+    border: 1px solid #6B403D;
+    border-left: none;
+    border-right: none;
+    padding: 3em 0;
+
+    h3{
+      margin-bottom: 1em;
+    }
+
+    >img{
+      width: 170px;
+    }
+    >div{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2em;
+
+     
+      .list{
+        display: flex;
+        ul{
+          margin-right: 2.5em;
+          li{
+            padding: .3em 0;
+           
+          }
+        }
+      }
+
+    }
+    #contact{
+      width: 32%;
+  
+      #input{
+        div{
+          display: flex;
+          border-radius: 7px;
+          padding: .6em .4em;
+          margin-bottom: 2.5em;
+          background-color: var(--secondaryColor2);
+  
+          input{
+            width: 60%;
+            padding: .3em;
+            border: none;
+            outline: none;
+            font-size: .85em;
+           
+          }
+          .red-btn{
+            padding: 1em 1em;
+            
+          }
+          
+  
+        }
+      }
+      #emails{
+        display: flex;
+        justify-content: space-between;
+      }
+  
+    }
+
+  }
+  #copyright{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5em 0;
+    border-bottom: 1px solid #6B403D;
+    ;
+
+    #social{
+      img{
+        height: 1.5em;
+        width: 1.5em;
+        margin-left:.5em;
+      }
+    }
+  }
+  #disclaimer{
+    padding: 3em 0;
+    text-align: center;
+    font-size: .85em;
+  }
+  .bottom-decorator{
+    top:96% ;
+    height: 2.5em;
+  }
 }
